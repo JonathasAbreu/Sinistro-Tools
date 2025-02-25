@@ -1,8 +1,8 @@
 [
     {
         "codigo": 1,
-        "nome": "Loja",
-        "responsavel": "Carlos Silva",
+        "nome": "Loja1",
+        "responsavel": "Carlos Silva1",
         "maiorMargem": 15,
         "menorMargem": 8,
         "cobraMaoDeObra": true,
@@ -11,8 +11,8 @@
 
     {
         "codigo": 2,
-        "nome": "exemplo",
-        "responsavel": "Joao",
+        "nome": "exemplo2",
+        "responsavel": "Joao2",
         "maiorMargem": 10,
         "menorMargem": 5,
         "cobraMaoDeObra": false,

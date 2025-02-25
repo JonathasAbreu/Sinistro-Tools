@@ -32,43 +32,10 @@ namespace LojaAPI.Services
             }
         }
 
-        public bool AddLoja(Loja loja, bool isAdmin)
-        {
-            if (!isAdmin)
-            {
-                Console.WriteLine("Acesso negado! Somente administradores podem adicionar lojas.");
-                return false;
-            }
-
-            lock (_lock)
-            {
-                try
-                {
-                    var lojas = GetLojas();
-                    lojas.Add(loja);
-
-                    string diretorio = Path.GetDirectoryName(_dadosLojas) ?? "";
-                    if (!Directory.Exists(diretorio))
-                    {
-                        Directory.CreateDirectory(diretorio);
-                    }
-
-                    string novoJson = JsonSerializer.Serialize(lojas, new JsonSerializerOptions { WriteIndented = true });
-                    File.WriteAllText(_dadosLojas, novoJson);
-                    return true;
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro ao escrever no arquivo JSON: {ex.Message}");
-                    return false;
-                }
-            }
-        }
-
         public Loja? GetLojaPorNome(string nome)
         {
             var lojas = GetLojas();
-            return lojas.FirstOrDefault(l => l.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase));
+            return lojas.FirstOrDefault(l => l.Nome != null && l.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase));
         }
 
         public Loja? GetLojaPorCodigo(int codigo)
@@ -76,41 +43,5 @@ namespace LojaAPI.Services
             var lojas = GetLojas();
             return lojas.FirstOrDefault(l => l.Codigo == codigo);
         }
-        public bool DeleteLoja(int codigo)
-        {
-            var lojas = GetLojas();
-            var lojaParaRemover = lojas.FirstOrDefault(l => l.Codigo == codigo);
-
-            if (lojaParaRemover == null)
-            {
-                return false;
-            }
-
-            lojas.Remove(lojaParaRemover);
-
-            string novoJson = JsonSerializer.Serialize(lojas, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_dadosLojas, novoJson);
-
-            return true;
-        }
-
-        public bool UpdateLoja(int codigo, Loja lojaAtualizada)
-        {
-            var lojas = GetLojas();
-            var lojaIndex = lojas.FindIndex(l => l.Codigo == codigo);
-
-            if (lojaIndex == -1)
-            {
-                return false;
-            }
-
-            lojas[lojaIndex] = lojaAtualizada;
-
-            string novoJson = JsonSerializer.Serialize(lojas, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_dadosLojas, novoJson);
-
-            return true;
-        }
-
     }
 }
