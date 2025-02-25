@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\LojaAPI\\LojaAPI.csproj": {}
+    "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj": {}
   },
   "projects": {
-    "C:\\LojaAPI\\LojaAPI.csproj": {
+    "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\LojaAPI\\LojaAPI.csproj",
+        "projectUniqueName": "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj",
         "projectName": "LojaAPI",
-        "projectPath": "C:\\LojaAPI\\LojaAPI.csproj",
+        "projectPath": "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj",
         "packagesPath": "C:\\Users\\Jhon\\.nuget\\packages\\",
-        "outputPath": "C:\\LojaAPI\\obj\\",
+        "outputPath": "E:\\Projetos\\Dados-Lojas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jhon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Jhon\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +47,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [
@@ -71,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
