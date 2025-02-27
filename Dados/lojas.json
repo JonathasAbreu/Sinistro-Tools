@@ -2,7 +2,7 @@
     {
         "codigo": 1,
         "nome": "Loja1",
-        "responsavel": "jonathas abreu de pontes",
+        "responsavel": "jonathas",
         "maiorMargem": 15,
         "menorMargem": 8,
         "cobraMaoDeObra": true,
