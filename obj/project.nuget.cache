@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1BcpWIUIyyc=",
+  "dgSpecHash": "LOiL4uO3eoE=",
   "success": true,
-  "projectFilePath": "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj",
+  "projectFilePath": "E:\\Projetos\\Sinistro-Tools\\LojaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhon\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.1\\microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
     "C:\\Users\\Jhon\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

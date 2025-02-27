@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj": {}
+    "E:\\Projetos\\Sinistro-Tools\\LojaAPI.csproj": {}
   },
   "projects": {
-    "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj": {
+    "E:\\Projetos\\Sinistro-Tools\\LojaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj",
+        "projectUniqueName": "E:\\Projetos\\Sinistro-Tools\\LojaAPI.csproj",
         "projectName": "LojaAPI",
-        "projectPath": "E:\\Projetos\\Dados-Lojas\\LojaAPI.csproj",
+        "projectPath": "E:\\Projetos\\Sinistro-Tools\\LojaAPI.csproj",
         "packagesPath": "C:\\Users\\Jhon\\.nuget\\packages\\",
-        "outputPath": "E:\\Projetos\\Dados-Lojas\\obj\\",
+        "outputPath": "E:\\Projetos\\Sinistro-Tools\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jhon\\AppData\\Roaming\\NuGet\\NuGet.Config"
