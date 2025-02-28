@@ -1,0 +1,21 @@
+[
+    {
+        "codigo": 1,
+        "nome": "Loja1",
+        "responsavel": "jonathas",
+        "maiorMargem": 15,
+        "menorMargem": 8,
+        "cobraMaoDeObra": true,
+        "observacao": "okpdaspfdsakopfdkopadkopdfkopdskpodsfkopdasfpokdfaskopdafskopdsdkopassdkopapfdfskopafdkopsdfkopspkopdfopkdfskopfdopkpgpfoskogpfofkdgpopdfkpoksfsodfkpgfkopdgpfgokdpspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspspsps"
+    },
+
+    {
+        "codigo": 2,
+        "nome": "exemplo2",
+        "responsavel": "Joao2",
+        "maiorMargem": 10,
+        "menorMargem": 5,
+        "cobraMaoDeObra": false,
+        "observacao": "Entrega lenta"
+    }
+]
